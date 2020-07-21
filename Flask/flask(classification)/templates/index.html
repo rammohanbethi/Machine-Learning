@@ -1,0 +1,105 @@
+<html>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+body
+{
+  width:100%;
+  margin:0px;
+  color:white;
+  background-image: url("https://www.washingtonpost.com/resizer/XDNLgd1ihU5u3te6FFp4haLzTRg=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/PBKJ5C6KJJC75BO46RZEWUGL6A.jpg");
+
+}
+.header{
+top:0;
+width:100%;
+height:90px
+font-family: 'Balsamiq Sans', cursive;
+font-size:25px;
+font-weight:800px;
+text-align: center;
+}
+.MAIN  p,label{
+ font-size:20px;
+ margin-left:20px;
+  font-family: 'Balsamiq Sans', cursive;
+}
+.MAIN  input,select
+{
+height:30px;
+width:200px;
+}
+.MAIN button
+{
+height:30px;
+width:200px;
+margin-left:60px;
+background-color:#daa520;
+}
+.MAIN b{
+font-size:20px;
+font-weight:800px;
+text-align:center;
+font-family: 'Balsamiq Sans', cursive;
+margin-left:20px;
+}
+
+</style>
+<body>
+<div class="header">
+<h1>Student Performance prediction</h1>
+</div>
+<div class="MAIN">
+<form action = "http://localhost:5000/prediction" method = "post">
+
+
+<label for = "Gender">Gender</label>
+<select name = "Gender">
+<option value = "Female">Female</option>
+<option value = "Male">Male</option>
+</select>
+<br><br>
+<label for = "Parantal level of education">Parantal level of education</label>
+<select name = "Parantal level of education">
+<option value = "some college">some college</option>
+<option value = "associate's degree">associate's degree</option>
+<option value = "high school">high school</option>
+<option value = "some high school">some high school</option>
+<option value = "bachelor's degree">bachelor's degree</option>
+<option value = "master's degree">master's degree</option>
+</select>
+
+<label for = "test preparation course">test preparation course</label>
+<select name = "test preparation course">
+<option value = "Completed">Completed</option>
+<option value = "None">None</option>
+</select>
+
+<label for = "Math_PassStatus">Math_PassStatus</label>
+<select name = "Math_PassStatus">
+<option value = "Pass">Completed</option>
+<option value = "Fail">None</option>
+</select>
+<label for = "Reading_PassStatus">Reading_PassStatus</label>
+<select name = "Reading_PassStatus">
+<option value = "Pass">Completed</option>
+<option value = "Fail">None</option>
+</select>
+<label for = "Writing_PassStatus">Writing_PassStatus</label>
+<select name = "Writing_PassStatus">
+<option value = "Pass">Completed</option>
+<option value = "Fail">None</option>
+</select>
+
+<label for = "Overall_PassStatus">Overall_PassStatus</label>
+<select name = "Overall_PassStatus">
+<option value = "Pass">Completed</option>
+<option value = "Fail">None</option>
+</select>
+
+<button type="submit" >SUBMIT</button>
+</form>
+<b>{{showcase}}</b>
+
+</div>
+</body>
+</html>
